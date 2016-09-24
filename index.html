@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Warbl</title>
+    </head>
+    <body>
+        <h1>Discover together. In person. In realtime.</h1>
+        <h2>Hyper local social music discovery platform.</h2>
+        <p>Share your latest music discoveries with your friends.</p>
+        <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyDyWE_4bA5b8oL6BBby2XEPzCIIiaTKrUY",
+            authDomain: "warbl-da233.firebaseapp.com",
+            databaseURL: "https://warbl-da233.firebaseio.com",
+            storageBucket: "warbl-da233.appspot.com",
+            messagingSenderId: "1069157114350"
+          }
+          firebase.initializeApp(config)
+          if (!('geolocation' in window.navigator)) {
+            window.alert('Your browser does not support access to location data.')
+          }
+        </script>
+    </body>
+</html>
